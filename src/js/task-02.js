@@ -9,10 +9,10 @@ const ingredients = [
 
 const ingredientsArray = document.querySelector('#ingredients');
 
-const elements = ingredients.map(option => {
+const elements = ingredients.map(ingredient => {
   const ingredientEl = document.createElement('li');
   ingredientEl.classList.add('item');
-  ingredientEl.textContent = option;
+  ingredientEl.textContent = ingredient;
 
   return ingredientEl
 });
