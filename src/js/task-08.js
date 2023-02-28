@@ -5,15 +5,18 @@ formEl.addEventListener('submit', (event) => {
     const {
         elements: { email, password }
     } = event.target;
-    const formData = {
-    email: `${email.value}`,
-    password: `${password.value}`
-    };
-    console.log(formData);
 
     if (email.value.trim() === '' || password.value === '') {
         return alert('Всі поля повинні бути заповнені!')
     }
+
+    const formData = {
+    email: email.value,
+    password: password.value
+    };
+    console.log(formData);
+
+    
 
     event.target.reset()
 });
